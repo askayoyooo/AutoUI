@@ -188,8 +188,6 @@ if is_admin():
     filenames = file_name(os.path.dirname(os.path.realpath(__file__))+'\\'+folder+'\\', '.exe')
 
     for file in filenames:
-        print(file)
-        print(type(file))
         if 'heaven' in file.lower():
             install_heaven_bench(file)
         elif 'furmark' in file.lower():
